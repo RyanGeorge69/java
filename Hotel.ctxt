@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Hotel
+comment1.params=phone_no\ b
+comment1.target=void\ accept(long,\ double)
+comment2.params=
+comment2.target=void\ calculate()
+comment3.params=
+comment3.target=void\ display()
+numComments=4
