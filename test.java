@@ -1,26 +1,19 @@
-import java.io.*;
+package class10;
+import java.util.*;
 public class test
 {
-    public static void main() throws IOException
+    private static int charge=0;
+    private static int t=4;
+    public static void main()
     {
-        int age;
-        String a, b, total;
+        for(int i=1;i<=5;i++)
+        {
+            charge=charge+500;
+            if(i==5)
+                t=t-5;
+        }
+        System.out.println(charge);
+        System.out.println(t);
 
-        InputStreamReader read = new InputStreamReader(System.in);
-        BufferedReader in = new BufferedReader(read);
-
-        System.out.print("Enter your age...:");
-        age=Integer.parseInt(in.readLine());
-
-        System.out.print("Enter the first value ....:");
-        a=in.readLine();
-
-        System.out.print("Enter the second value ....:");
-        b=(in.readLine());
-
-        total=a+b;
-
-        System.out.print("Total....:"+total);
     }
 }
-
