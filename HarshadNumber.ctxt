@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=HarshadNumber
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=number
+comment2.target=boolean\ isHarshadNumber(int)
+comment3.params=number
+comment3.target=int\ calculateSumOfDigits(int)
+numComments=4
