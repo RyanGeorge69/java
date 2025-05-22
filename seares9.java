@@ -1,23 +1,24 @@
 import java.util.*;
-public class seares2
+import java.lang.*;
+public class seares9
 {
+
     public static void main()
     {
-        int n,s=0,x=1,a;
+        double s=0;
+        int n;
         Scanner sc = new Scanner(System.in);
-        System.out.println("What numder do you want to use as 'a' ");
-        a=sc.nextInt();
-        System.out.println("Till what number do you want add");
+        System.out.println("enter the no. till what you want the sum of 1/the no. ");
         n=sc.nextInt();
         for(int i=1;i<=n;i++)
         {
             if(i%2==0)
             {
-                s=s-(int)(Math.pow(a,i))/x;
+                s=s-1.0/i;
             }
             else
             {
-                s=s+(int)(Math.pow(a,i))/x;
+                s=s+1.0/i;
             }
             
         }

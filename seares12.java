@@ -1,25 +1,26 @@
 import java.util.*;
-public class seares2
+import java.lang.*;
+public class seares12
 {
     public static void main()
     {
-        int n,s=0,x=1,a;
+        double s=0;
+        int n,a;
         Scanner sc = new Scanner(System.in);
-        System.out.println("What numder do you want to use as 'a' ");
-        a=sc.nextInt();
-        System.out.println("Till what number do you want add");
+        System.out.println("Enter a no.");
         n=sc.nextInt();
+        System.out.println("Enter a no.");
+        a=sc.nextInt();
         for(int i=1;i<=n;i++)
         {
             if(i%2==0)
             {
-                s=s-(int)(Math.pow(a,i))/x;
+                s=s-Math.pow(a,i)/i;
             }
             else
             {
-                s=s+(int)(Math.pow(a,i))/x;
+                s=s+Math.pow(a,i)/i;
             }
-            
         }
         System.out.println(s);
     }

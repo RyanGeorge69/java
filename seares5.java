@@ -1,25 +1,26 @@
 import java.util.*;
-public class seares2
+import java.lang.*;
+public class seares5
 {
     public static void main()
     {
-        int n,s=0,x=1,a;
+        int a,x=1,n;
+        double s=0;
         Scanner sc = new Scanner(System.in);
-        System.out.println("What numder do you want to use as 'a' ");
+        System.out.println("Enter a number ");
         a=sc.nextInt();
-        System.out.println("Till what number do you want add");
+        System.out.println("Enter a numder for how much you want to multiplay ");
         n=sc.nextInt();
         for(int i=1;i<=n;i++)
         {
             if(i%2==0)
             {
-                s=s-(int)(Math.pow(a,i))/x;
+                s=s-Math.pow(a,i)/x;
             }
             else
             {
-                s=s+(int)(Math.pow(a,i))/x;
+                s=s+Math.pow(a,i)/x;            
             }
-            
         }
         System.out.println(s);
     }
