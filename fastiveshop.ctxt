@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=fastiveshop
+comment1.params=cn\ pn\ PA
+comment1.target=void\ Inputvalue(java.lang.String,\ java.lang.String,\ double)
+comment2.params=
+comment2.target=void\ calculate()
+comment3.params=
+comment3.target=void\ Display()
+numComments=4
