@@ -1,40 +1,24 @@
-package class10;
+package exam;
 import java.util.*;
 public class hi
 {
     public static void main()
     {
         Scanner sc=new Scanner(System.in);
-        System.out.println("enter\n1 for Factors\n2 for Factorial");
-        int n=sc.nextInt();
-        switch(n)
-        {   case 1:
-                int value;
-                System.out.print("Enter a value:");
-                value=sc.nextInt();
-                int t=value;
-                System.out.print("its facter:");
-                for(int i=1;i<value;i++)
-                {
-                    if(value%i==0)
-                    {
-                        System.out.print(i+",");
-                    }
-                }
-                break;
-            case 2:
-                int f=1;
-                int num;
-                System.out.print("Enter a value:");
-                num=sc.nextInt();
-                for(int i=1;i<=num;i++)
-                {
-                    f*=i;
-                }
-                System.out.print("Fatorial="+f);
-                break;
-            default:
-                System.out.print("Wrong input");
+        System.out.print("Enter a value:");
+        int a=sc.nextInt();
+
+        int sum=0;
+        int k=a*a;
+        while(k>0)
+        {
+            int b=k%10;
+            sum+=b;
+            k/=10;
         }
+        if(a==sum)
+            System.out.print("It is a neon no.");
+        else 
+            System.out.print("It is not a neon no.");
     }
 }

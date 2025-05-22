@@ -1,45 +1,54 @@
+package exam;
 import java.util.*;
 public class employee
 {
-    Scanner sc=new Scanner(System.in);
-    long eno;
+    int eno,age,basic;
+    double net;
     String ename;
-    int age;
-    double basic,net,da,pf,hre;
-    
+    Scanner sc=new Scanner(System.in);
     void accept()
     {
-        System.out.print("Enter your name:");
+        System.out.print("Enter your mobile no.=");
+        eno=sc.nextInt();
+        System.out.print("Enter your Name=");
         ename=sc.next();
-        System.out.print("Enter your phone no.:");
-        eno=sc.nextLong();
-        System.out.print("Enter age:");
+        System.out.print("Enter your age=");
         age=sc.nextInt();
-        System.out.print("Enter your basic:");
-        basic=sc.nextDouble();
+        System.out.print("Enter your Salary=");
+        basic=sc.nextInt();
     }
-    
+
     void calculate()
     {
-        hre=0.185*basic;
-        da=0.1745*basic;
-        pf=0.081*basic;
-        net=basic+hre+da-pf;
-        if(age>=50)
-        net+=5000;
+        if(age<=50)
+        {
+            double har=0.185*basic;
+            double da=0.1745*basic;
+            double pf=0.081*basic;
+            net=basic+har+da-pf;
+        }
+        else
+        {
+            double har=0.185*basic;
+            double da=0.1745*basic;
+            double pf=0.081*basic;
+            net=basic+har+da-pf+5000;
+        }
     }
-    
+
     void print()
     {
-        System.out.println("eno\tename\tage\tbasic\tnet");
-        System.out.println(eno+"\t"+ename+"\t"+age+"\t"+basic+"\t"+net);
+        System.out.println("Your name="+ename);
+        System.out.println("Your Mobile no.="+eno);
+        System.out.println("Your age is="+age);
+        System.out.println("Your salary is="+basic);
+        System.out.println("Your net salary is="+net);
     }
-    
     public static void main()
     {
-        employee ob=new employee();
-        ob.accept();
-        ob.calculate();
-        ob.print();
+        employee ob1=new employee();
+        ob1.accept();
+        ob1.calculate();
+        ob1.print();
     }
 }
